@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -26,6 +25,17 @@ SECRET_KEY = '3!l^vn*kevo#li(#p!fl5(ac_2wh_12eh&+jbxz+3o#-d^rlt9'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+
+# Email stuff
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'codeamend'
+EMAIL_HOST_PASSWORD = 'mikeis22'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = True
+
+
 
 
 # Application definition
